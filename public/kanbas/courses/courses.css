@@ -1,0 +1,10 @@
+.course-sideboard {
+    margin-bottom: 10px;
+    color: #b51a00;
+}
+
+.course-sideboard-selected {
+    border-left: 2px solid black; 
+    padding-left: 3px;
+    color: black;
+}

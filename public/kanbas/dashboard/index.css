@@ -1,0 +1,5 @@
+.line-edit {
+    border-bottom: 0.5px solid black;
+    width: 95%;
+    place-items: center;
+}

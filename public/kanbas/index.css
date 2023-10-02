@@ -1,0 +1,191 @@
+/*
+------------ COLORS ------------
+*/
+
+.wd-fg-color-black {
+  color: black;
+}
+
+.wd-fg-color-white {
+  color: white;
+}
+
+.wd-fg-color-blue {
+  color: #7070ff;
+}
+
+.wd-fg-color-red {
+  color: red;
+}
+
+.wd-fg-color-green {
+  color: green;
+}
+
+.wd-bg-color-black {
+  background-color: black;
+}
+.wd-bg-color-white {
+  background-color: white;
+}
+.wd-bg-color-yellow {
+  background-color: #ffff07;
+}
+
+.wd-bg-color-blue {
+  background-color: #7070ff;
+}
+
+.wd-bg-color-red {
+  background-color: #ff7070;
+}
+
+.wd-bg-color-green {
+  background-color: green;
+}
+
+/*
+------------ DIMENSIONS ------------
+*/
+
+.wd-dimension-portrait {
+  width: 75px;
+  height: 100px;
+}
+
+.wd-dimension-landscape {
+  width: 100px;
+  height: 75px;
+}
+
+.wd-dimension-square {
+  width: 80px;
+  height: 80px;
+}
+
+.wd-dimension-sidebar {
+  background-color: black;
+  
+}
+
+/*
+------------ FLEX ------------
+*/
+
+.wd-flex-row-container {
+  display: flex;
+  flex-direction: row;
+}
+
+
+/*
+------------ MARGINS ------------
+*/
+
+.wd-margin-all-around {
+  margin: 10px;
+}
+
+.wd-margin-bottom {
+  margin-bottom: 10px;
+}
+
+.noborder {
+  border: none;
+}
+
+.sidebar-two-margins {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+/*
+------------ PADDING ------------
+*/
+
+.wd-padded-top-left {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.wd-padded-top-Selected-icon {
+  padding-top: 10px;
+  color:white;
+}
+
+.wd-padded-left {
+  padding-left: 2px;
+}
+
+.wd-padded-bottom-right {
+  padding-bottom: 50px;
+  padding-right: 50px;
+}
+
+
+.wd-padding-fat {
+  padding: 50px;
+}
+
+.wd-padding-min {
+  padding : 5px;
+}
+
+/*
+------------ POSITION ------------
+*/
+
+.centered-cell {
+  text-align: center;
+}
+
+.left-cell {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.wd-zindex-bring-to-front {
+  z-index: 10;
+}
+
+.wd-position-absolute {
+  position: absolute;
+}
+
+/*
+------------ List styling ------------
+*/
+
+ul {
+  list-style-type: none;
+
+}
+
+.ul-reposition {
+  margin-left: -23.5px;
+  /*margin-right: 10px;*/
+}
+
+.wd-dimension-sidebar-width {
+  margin: 80px;
+}
+
+/*
+------------ List styling ------------
+*/
+
+.breadcrumb-font-size {
+  font-size: 18px;
+}
+
+.large-label {
+  font-size: 40px;
+}
+
+.item-front-size {
+  font-size: 20px;
+}
+
+.button-styling{
+  border-radius: 50px;
+  margin: 10px;
+}
