@@ -1,39 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <title>Grades</title>
-</head>
-<body>
-    <table border="0" width="100%">
-        <tbody>
-            <tr>
-                <td style = "vertical-align: top;">
-                    <ul>
-                        <!--
-                            Column 1
-                            <a href="https://www.lipsum.com">click here</a>
-                        -->
-                        <li><a href="account.html">Account</a></li>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="courses.html">Courses</a></li>
-                        <li><a href="#">Calendar</a></li>
-                        <li><a href="#">Inbox</a></li>
-                        <li><a href="#">Hisotry</a></li>
-                        <li><a href="#">Studio</a></li>
-                        <li><a href="#">Commons</a></li>
-                        <li><a href="#">Help</a></li>
-                     </ul>
-                   </td>
-                   <td style = "vertical-align: top;">
-                    <ul>
-                        <!--
-                            Column 2
-                        -->
-                        <li><a href="../kanbas/profile/index.html">Profile</a></li>
-                    </ul>
-                </td>
- </tr>
-</table>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Account</title>
+        <link href="index.css" rel="stylesheet" />
+        <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="../vendors/fontawesome/css/all.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="row">
+            <!-- class="wd-dimension-sidebar-width wd-bg-color-black centered-cell noborder"
+                    style="vertical-align: center">-->
+            <div class="col-1 wd-dimension-sidebar">
+                <ul class="ul-reposition">
+                    <li class="wd-bg-color-black">
+                        <img src="../images/northeastern-logo.png"
+                            class="card-img-top wd-margin-bottom"
+                            alt="Northeastern Logo"
+                            height="80"
+                            width="80" />
+                    </li>
+                    <!-- Account -->
+                    <li class="wd-bg-color-white">
+                        <div
+                            class="wd-padded-top-Selected-icon wd-zindex-bring-to-front wd-bg-color-white">
+                            <a href="account.html"
+                                class="wd-fg-color-red"
+                                style="text-decoration: none;">
+                                <i class="far fa-user-circle fa-lg"
+                                    style="color: #4545457e; font-size: 3em"></i>
+                                Account</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class>
+                            <a href="../kanbas/dashboard/index.html" class="wd-fg-color-white"
+                                style="text-decoration: none;">
+                                <i class="fas fa-tachometer-alt"
+                                    style="color: #b51a00; font-size: 3em"></i>
+                                Dashboard</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class>
+                            <a href="../kanbas/courses/index.html"
+                                class="wd-fg-color-white"
+                                style="text-decoration: none;">
+                                <i class="fas fa-book"
+                                    style="color: #b51a00; font-size: 3em"></i>
+                                Courses</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class=" ">
+                            <a href="#" class="wd-fg-color-white"
+                                style="text-decoration: none;">
+                                <i class="fas fa-calendar-alt"
+                                    style="color: #b51a00; font-size: 3em"></i>
+                                Calendar</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="  ">
+                            <a href="#" class="wd-fg-color-white"
+                                style="text-decoration: none;">
+                                <i class="fas fa-inbox"
+                                    style="color: #b51a00; font-size: 3em"></i>
+                                <br>
+                                Inbox</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class=" ">
+                            <a href="#" class="wd-fg-color-white"
+                                style="text-decoration: none;">
+                                <i class="far fa-clock"
+                                    style="color: #b51a00; font-size: 3em"></i>
+                                History</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class=" ">
+                            <a href="#" class="wd-fg-color-white"
+                                style="text-decoration: none;">
+                                <i class="fas fa-network-wired"
+                                    style="color: #b51a00; font-size: 3em"></i>
+                                Studio</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class=" ">
+                            <a href="#" class="wd-fg-color-white"
+                                style="text-decoration: none;">
+                                <i class="fas fa-share-square"
+                                    style="color: #b51a00; font-size: 3em"></i>
+                                Commons</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class=" ">
+                            <a href="#" class="wd-fg-color-white"
+                                style="text-decoration: none;">
+                                <i class="fas fa-question-circle"
+                                    style="color: #b51a00; font-size: 3em"></i>
+                                <br>
+                                Help</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <div class="row-1" style="margin: 20px;">
+                    <!-- Column 2-->
+                    <div>
+                        <i class="fas fa-bars"
+                            style="color: #b51a00;  font-size: 3em"></i>
+                        <label class="large-label">Renke Cui's
+                            Profile</label>
+                    </div>
+                    <div style="border-bottom: 1px solid black;"></div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <!-- lists items-->
+                        <ul style="list-style: none">
+                            <li class="left-cell" style="margin-top: 10px;">
+                                <label>
+                                    <a href="#"
+                                        class="wd-fg-color-red item-front-size"
+                                        style="text-decoration: none;">
+                                        Notifications</a>
+                                </label>
+                            </li>
+                            <li class="left-cell"
+                                style="margin-top: 20px;">
+                                <div>
+                                    <label>
+                                        <a href="../kanbas/profile/index.html"
+                                            class="wd-fg-color-red item-front-size"
+                                            style="text-decoration: none;">
+                                            Profile</a>
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="left-cell">
+                                <div>
+                                    <label>
+                                        <a href="#"
+                                            class="wd-fg-color-red item-front-size"
+                                            style="text-decoration: none;">
+                                            Files</a>
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="left-cell">
+                                <div>
+                                    <label>
+                                        <a href="#"
+                                            class="wd-fg-color-red item-front-size"
+                                            style="text-decoration: none;">
+                                            Settings</a>
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="left-cell">
+                                <div>
+                                    <label>
+                                        <a href="#"
+                                            class="wd-fg-color-red item-front-size"
+                                            style="text-decoration: none;">
+                                            ePortfolios</a>
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="left-cell">
+                                <div>
+                                    <label>
+                                        <a href="#"
+                                            class="wd-fg-color-red item-front-size"
+                                            style="text-decoration: none;">
+                                            Shared Content</a>
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="left-cell">
+                                <div>
+                                    <label>
+                                        <a href="#"
+                                            class="wd-fg-color-red item-front-size"
+                                            style="text-decoration: none;">
+                                            The Hub</a>
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="left-cell">
+                                <div>
+                                    <label>
+                                        <a href="#"
+                                            class="wd-fg-color-red item-front-size"
+                                            style="text-decoration: none;">
+                                            Qwickly Course Tools</a>
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="left-cell">
+                                <div>
+                                    <label>
+                                        <a href="#"
+                                            class="wd-fg-color-red item-front-size"
+                                            style="text-decoration: none;">
+                                            Global Annoucements</a>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-8">
+
+                    </div>
+                    <div class="col-2">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

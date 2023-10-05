@@ -1,59 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Grades</title>
-  </head>
-  <body>
-    <table border="0" width="100%">
-      <tbody>
-        <tr>
-          <td style="vertical-align: top">
-            <ul>
-                <span class="fa-stack fa-2x">
-                    <i class="fas fa-square fa-stack-2x"></i>
-                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                </span><br/>
-              <li><a href="account.html">Account</a></li>
-              <li><a href="#">Dashboard</a></li>
-              <li><a href="courses.html">Courses</a></li>
-              <li><a href="#">Calendar</a></li>
-              <li><a href="#">Inbox</a></li>
-              <li><a href="#">Hisotry</a></li>
-              <li><a href="#">Studio</a></li>
-              <li><a href="#">Commons</a></li>
-              <li><a href="#">Help</a></li>
-            </ul>
-            <!--
-                    <h2>Dimension</h2>
-                    <div>
-                        <div class="wd-dimension-portrait wd-bg-color-yellow">Portrait</div>
-                        <div class="wd-dimension-landscape wd-bg-color-blue wd-fg-color-white">
-                            Landscape
-                    </div>
-                    <div class="wd-dimension-square wd-bg-color-red">Square</div>
-                     </div>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Account</title>
+        <link href="index.css" rel="stylesheet" />
+        <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="../vendors/fontawesome/css/all.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="row">
+            <!-- class="wd-dimension-sidebar-width wd-bg-color-black centered-cell noborder"
+                    style="vertical-align: center">-->
+            <div class="col-1 wd-dimension-sidebar">
+                <ul class="ul-reposition">
+                    <li class="wd-bg-color-black">
+                        <img src="../images/northeastern-logo.png"
+                            class="card-img-top wd-margin-bottom"
+                            alt="Northeastern Logo"
+                            height="80"
+                            width="80" />
+                    </li>
+                    <!-- Account -->
+                    <li>
+                        <div class="">
+                            <a href="account.html"
+                                class="wd-fg-color-white"
+                                style="text-decoration: none;">
+                                <i class="far fa-user-circle fa-lg"
+                                    style="color: #b51a00; font-size: 3em"></i>
+                                Account</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class>
+                            <a href="../kanbas/dashboard/index.html" class="wd-fg-color-white"
+                                style="text-decoration: none;">
+                                <i class="fas fa-tachometer-alt"
+                                    style="color: #b51a00; font-size: 3em"></i>
+                                Dashboard</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class>
+                            <a href="../kanbas/courses/index.html"
+                                class="wd-fg-color-white"
+                                style="text-decoration: none;">
+                                <i class="fas fa-book"
+                                    style="color: #b51a00; font-size: 3em"></i>
+                                Courses</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class=" ">
+                            <a href="#" class="wd-fg-color-white"
+                                style="text-decoration: none;">
+                                <i class="fas fa-calendar-alt"
+                                    style="color: #b51a00; font-size: 3em"></i>
+                                Calendar</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="  ">
+                            <a href="#" class="wd-fg-color-white"
+                                style="text-decoration: none;">
+                                <i class="fas fa-inbox"
+                                    style="color: #b51a00; font-size: 3em"></i>
+                                <br>
+                                Inbox</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class=" ">
+                            <a href="#" class="wd-fg-color-white"
+                                style="text-decoration: none;">
+                                <i class="far fa-clock"
+                                    style="color: #b51a00; font-size: 3em"></i>
+                                History</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class=" ">
+                            <a href="#" class="wd-fg-color-white"
+                                style="text-decoration: none;">
+                                <i class="fas fa-network-wired"
+                                    style="color: #b51a00; font-size: 3em"></i>
+                                Studio</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class=" ">
+                            <a href="#" class="wd-fg-color-white"
+                                style="text-decoration: none;">
+                                <i class="fas fa-share-square"
+                                    style="color: #b51a00; font-size: 3em"></i>
+                                Commons</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class=" ">
+                            <a href="#" class="wd-fg-color-white"
+                                style="text-decoration: none;">
+                                <i class="fas fa-question-circle"
+                                    style="color: #b51a00; font-size: 3em"></i>
+                                <br>
+                                Help</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div clas="col-11">
 
-            -->
-            <!--
-                <h2>Stacking icons</h2>
-                <span class="fa-stack fa-2x">
-                    <i class="fas fa-square fa-stack-2x"></i>
-                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                </span><br/>
-                <span class="fa-stack fa-2x">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="fas fa-flag fa-stack-1x fa-inverse"></i>
-                </span><br/>
-                <span class="fa-stack fa-2x">
-                    <i class="fas fa-camera fa-stack-1x"></i>
-                    <i class="fas fa-ban fa-stack-2x" style="color:Tomato"></i>
-                </span><br/>
-
-            -->
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
+            </div>
+        </div>
+    </body>
 </html>
