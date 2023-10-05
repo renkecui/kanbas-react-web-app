@@ -13,3 +13,26 @@
     font: 20px;
     
 }
+
+.button-rounded-left {
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+.button-rounded-right {
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.button-rounded-all {
+    border-radius: 40px;
+}
+
+.wd-flex-grow-1 {
+    flex-grow: 1;
+  }
+
+.right-sidebar-title {
+    font-weight: bold;
+    font-size: 16px; 
+}
