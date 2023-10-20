@@ -11,7 +11,6 @@ function Dashboard() {
     margin: "10px",
     textDecoration: "none"
   };
-
   return (
     <div>
       <div>
@@ -46,7 +45,7 @@ function Dashboard() {
                           <small>{course._id}</small>
                           <br />
                           <small>
-                            {course.number} Fall 2023 Semester Full Term
+                            {course.number}
                           </small>
                           <br />
                           <i className="fas fa-file-signature"></i>
