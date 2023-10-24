@@ -37,7 +37,7 @@ function Dashboard() {
                       >
                         <img
                           src={"../../images/Northeastern-campus-picture.jpeg"}
-                          width={290}
+                          width={230}
                         />
                         <div className="card-body">
                           <span style={{ color: "blue" }}>{course.name}</span>
