@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 import db from "../../../Database";
+import { updateAssignment } from "../assignmentsReducer";
+import { useSelector, useDispatch } from "react-redux";
 
 function AssignmentEditor() {
   const { assignmentId } = useParams();
@@ -14,6 +16,8 @@ function AssignmentEditor() {
     console.log("Actually saving assignment TBD in later assignments");
     navigate(`/Kanbas/Courses/${courseId}/Assignments`);
   };
+  const dispatch = useDispatch();
+
   return (
     <div>
       <h2>Assignment Name</h2>
@@ -24,7 +28,11 @@ function AssignmentEditor() {
       >
         Cancel
       </Link>
-      <button onClick={handleSave} className="btn btn-success me-2">
+      <button
+        onClick={() => dispatch(updateAssignment(assignment))}
+        to={`/Kanbas/Courses/${courseId}/Assignments`}
+        className="btn btn-success me-2"
+      >
         Save
       </button>
     </div>
