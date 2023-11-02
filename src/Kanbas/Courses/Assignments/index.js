@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import db from "../../Database";
 import { FaGripVertical } from "react-icons/fa";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  addAssignment,
+  deleteAssignment,
+  updateAssignment,
+  setAssignment,
+} from "./assignmentsReducer";
 function Assignments() {
   const { courseId } = useParams();
   const assignments = db.assignments;
+
+  //const assignments = useSelector((state) => state.assignmentsReducer.assignments);
+  //const assignment = useSelector((state) => state.assignmentsReducer.assignment);
+  const dispatch = useDispatch();
   const courseAssignments = assignments.filter(
-    (assignment) => assignment.course === courseId
-  );
+    (assignment) => assignment.course === courseId);
+
   return (
     <div>
       <div className="row">
@@ -30,16 +41,18 @@ function Assignments() {
               <i className="fas fa-ellipsis-v" style={{ color: "#000000" }}></i>
             </span>
           </button>
-          <button
-            type="button"
-            className="btn btn-danger float-end"
-            style={{ marginLeft: "5px", marginBottom: "2px" }}
-          >
-            <span>
-              <i className="fas fa-plus" style={{ color: "#000000" }}></i>
-            </span>
-            Assignments
-          </button>
+          <Link to={`/Kanbas/Courses/${courseId}/Assignments/newAssignment.js`}>
+            <button
+              type="button"
+              className="btn btn-danger float-end"
+              style={{ marginLeft: "5px", marginBottom: "2px" }}
+            >
+              <span>
+                <i className="fas fa-plus" style={{ color: "#000000" }}></i>
+              </span>
+              Assignments
+            </button>
+          </Link>
           <button
             type="button"
             className="btn btn-secondary float-end"
@@ -148,6 +161,19 @@ function Assignments() {
                     </span>
                   </div>
                 </a>
+              </div>
+              <div className="col-2 d-flex justify-content-center">
+                <button
+                  className="btn btn-danger"
+                >
+                  Delete
+                </button>
+                <button
+                  className="btn btn-success"
+                  //onClick={() => dispatch(setAssignment(assignment))}
+                >
+                  Edit
+                </button>
               </div>
             </div>
           </Link>
