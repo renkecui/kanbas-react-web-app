@@ -97,7 +97,7 @@ function ModuleList() {
                     onClick={() => dispatch(deleteModule(module._id))}
                   >
                     Delete
-                  </button> 
+                  </button>
                   <button
                     className="btn btn-success"
                     onClick={() => dispatch(setModule(module))}
