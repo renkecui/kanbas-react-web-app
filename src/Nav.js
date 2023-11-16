@@ -24,6 +24,16 @@ function Nav() {
           A4
         </Link>
       </div>
+      <div className="nav-colors">
+        <Link
+          to="/Labs/a5"
+          className={`nav-link ${
+            pathname.includes("a5") ? "active" : ""
+          } wd-fd-red-link`}
+        >
+          A5
+        </Link>
+      </div>
       <div className={"nav-colors"}>
         <Link
           to="/hello"

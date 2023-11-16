@@ -14,7 +14,7 @@ function Labs() {
       <div className="container">
         <Nav />
         <Routes>
-          <Route path="/" element={<Navigate to="a3" />} />
+          <Route path="/" element={<Navigate to="a5" />} />
           <Route path="a3" element={<Assignment3 />} />
           <Route path="a4" element={<Assignment4 />} />
           <Route path="a5" element={<Assignment5 />} />

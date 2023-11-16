@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+import axios from "axios";
 import React from "react";
 import db from "../../Kanbas/Database";
 import { Navigate, Route, Routes, useParams } from "react-router-dom";
@@ -9,9 +11,17 @@ import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
 import { FaBars } from "react-icons/fa";
 
-function Courses({ courses }) {
+function Courses() {
   const { courseId } = useParams();
-  const course = courses.find((course) => course._id === courseId);
+  const [course, setCourse] = useState({});
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(`${URL}/${courseId}`);
+    setCourse(response.data);
+  };
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+
   return (
     <div>
       <div>
@@ -46,7 +56,10 @@ function Courses({ courses }) {
         <div className="col">
           <CourseNavigation />
         </div>
-        <div className="col-10" style={{paddingLeft: "-100px",paddingRight:"30px"}}>
+        <div
+          className="col-10"
+          style={{ paddingLeft: "-100px", paddingRight: "30px" }}
+        >
           <Routes>
             <Route path="/" element={<Navigate to="Home" />} />
             <Route path="Home" element={<Home />} />
