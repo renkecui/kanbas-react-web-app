@@ -7,7 +7,7 @@ import "./KanbasNavigation/index.css";
 import "../vendors/bootstrap/css/bootstrap.min.css";
 import "../vendors/fontawesome/css/all.css";
 // import "./index.css"; // optionally import CSS files as needed
-
+// test push
 function Kanbas() {
   return (
     <div className="row" >
@@ -21,6 +21,7 @@ function Kanbas() {
             <Route path="Account" element={<h1>Account</h1>} />
             <Route path="Dashboard" element={<Dashboard />} />
             <Route path="Courses/:courseId/*" element={<Courses />} />
+            
           </Routes>
         </div>
       </div>
