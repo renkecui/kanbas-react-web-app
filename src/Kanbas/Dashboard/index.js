@@ -11,7 +11,7 @@ function Dashboard() {
   });
 
   const addNewCourse = () => {
-    setCourses([courses, {course, _id: new Date().getTime() }]);
+    setCourses([courses, {course, _id: new Date().getTime()}]);
   };
   const deleteCourse = (courseId) => {
     setCourses(courses.filter((course) => course._id !== courseId));
@@ -98,17 +98,18 @@ function Dashboard() {
             className="list-group-item"
           >
             {course.name}
+            <br/>
+            {course.number}
             <button
               className="btn btn-danger float-end"
               style={{ margin: "5px" }}
               onClick={(event) => {
                 event.preventDefault();
-                deleteCourse(course._id);
+                deleteCourse(course);
               }}
             >
               Delete
             </button>
-
             <button
               className="btn btn-warning float-end"
               style={{ margin: "5px" }}
